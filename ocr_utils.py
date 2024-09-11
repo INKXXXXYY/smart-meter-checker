@@ -1,4 +1,5 @@
 from PIL import Image
+import pyautogui
 import pytesseract
 import re
 

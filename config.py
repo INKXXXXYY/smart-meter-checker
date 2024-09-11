@@ -31,3 +31,9 @@ STEPS = [
     {"name": "智能电表", "description": "点击智能电表按钮"},
     {"name": "关闭按钮", "description": "点击关闭按钮"}
 ]
+
+# 余额阈值，当电表余额低于此值时发送警告邮件
+BALANCE_THRESHOLD = 30.0  # 你可以根据需要修改阈值
+
+# 截图区域配置 (left, top, width, height)，用于指定截图区域
+METER_SCREENSHOT_REGION = (709, 50, 500, 1000)  # 根据实际显示位置修改

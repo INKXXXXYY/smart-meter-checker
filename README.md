@@ -88,6 +88,13 @@
        {"name": "关闭按钮", "description": "点击关闭按钮"}
    ]
    ```
+4. **BALANCE_THRESHOLD**：设置电表余额的警告阈值。当电表余额低于此值时，系统会自动发送提醒邮件：
+   ```python
+   BALANCE_THRESHOLD = 30.0  # 默认值为30.0度，可以根据需求修改
+
+5. **METER_SCREENSHOT_REGION**：配置截图区域，用于指定你要截图的屏幕区域。该区域是一个 `(left, top, width, height)` 的元组，分别表示截图的左上角位置和宽高。你需要根据电表余额在屏幕上的位置来调整这个区域。
+   ```python
+   METER_SCREENSHOT_REGION = (709, 50, 500, 1000)  # 根据实际显示位置修改
 
 ## 如何自定义流程
 
